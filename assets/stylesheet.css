@@ -1,0 +1,58 @@
+
+#pdf-content {
+    font-size: 10px;  /* Adjust font size as needed */
+    padding: 5px;  /* Add some padding for better margins */
+}
+
+#pdf-content, #page1, #page2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  /* Ensures the container takes full width */
+}
+
+#page1{
+    page-break-after: always;
+}
+
+
+
+#page1 div.row, #page2 div.row {
+    flex: 1;
+    display: flex;
+    margin: 0px 0px;  /* Adjust spacing between rows */
+}
+
+#page1 div.row div.column,
+#page2 div.row div.column {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;  /* Includes padding in the width calculation */
+}
+
+
+.header-title {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0.5px;
+    width: 100%;
+    background-color: navy;
+}
+
+.graph-style {
+    width: 100%; /* Adjust based on requirement */
+    height: 300px; /* Example height */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  /* This will vertically center align the items in the container */
+    justify-content: space-between;  /* This spreads out the child elements evenly */
+    width: 100%;  /* Full width to prevent squeezing */
+}
+
+.graph-container {  /* Ensure this class is added to your graph containers */
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
