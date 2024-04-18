@@ -6,16 +6,16 @@ import plotly.graph_objs as go
 # from js import jsPDF  # Import the jsPDF library from CDN
 import numpy as np
 # import html2pdf  # Library for HTML to PDF conversion
-df_fund_data = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17534.csv')
+df_fund_data = pd.read_csv('/assets/17534.csv')
 #print(df_fund_data.head())
 
-df_perf_summary = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17530.csv')
+df_perf_summary = pd.read_csv('/assets/17530.csv')
 #print(df_perf_summary.head())
 
-df_cal_year = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17528.csv')
+df_cal_year = pd.read_csv('/assets/17528.csv')
 #print(df_cal_year.head())
 
-df_perf_pc = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17532.csv')
+df_perf_pc = pd.read_csv('/assets/17532.csv')
 #print(df_perf_pc.head())
 #print("-----------")
 # Generate sample data for the line chart
@@ -226,13 +226,13 @@ modifed_perf_table.insert(
     ], style=dict(background='white', fontWeight=600))
 )
 
-df_fund_info = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17544.csv')
+df_fund_info = pd.read_csv('/assets/17544.csv')
 #print(df_fund_info.head())
-df_fund_characteristics = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17542.csv')
+df_fund_characteristics = pd.read_csv('/assets/17542.csv')
 #print(df_fund_characteristics.head())
-df_fund_facts = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17540.csv')
+df_fund_facts = pd.read_csv('/assets/17540.csv')
 #print(df_fund_facts.head())
-df_bond_allocation = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17538.csv')
+df_bond_allocation = pd.read_csv('/assets/17538.csv')
 #print(df_bond_allocation.head())
 
 print(dash.__version__)
