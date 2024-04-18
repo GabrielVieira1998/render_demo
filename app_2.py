@@ -1,24 +1,10 @@
 import pandas as pd
-import io
-from reportlab.lib.pagesizes import letter, landscape
-from reportlab.platypus import SimpleDocTemplate, Table, PageBreak
-from reportlab.lib import colors
 import dash
 from dash import html,  dcc, clientside_callback, Input, Output, State
 from plotly import graph_objs as go
-from dash.dependencies import Input, Output, ClientsideFunction
-import base64
-from dash.exceptions import PreventUpdate
 import plotly.graph_objs as go
-from plotly.io import to_image
-from io import BytesIO
-from reportlab.lib.pagesizes import letter
-from reportlab.platypus import SimpleDocTemplate, Image
 # from js import jsPDF  # Import the jsPDF library from CDN
 import numpy as np
-import base64
-import io
-from PIL import Image  # For potential image scaling if needed
 # import html2pdf  # Library for HTML to PDF conversion
 df_fund_data = pd.read_csv('/Users/gabrielvieira/Documents/Projects/assets/17534.csv')
 #print(df_fund_data.head())
