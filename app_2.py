@@ -253,7 +253,7 @@ print(dash.__version__)
 
 external_stylesheets = ['assets/stylesheet.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 # app = dash.Dash('GS Bond II Portfolio')#, external_scripts=['/assets/custom_script.js'])
 
 
